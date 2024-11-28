@@ -1,0 +1,2 @@
+# Sistema-de-controle-de-romeiros-SCR
+ Projeto de TCC desenvolvido para apoiar os romeiros na caminhada até Aparecida, por meio de um site responsivo. O sistema oferece funcionalidades como cadastro de pontos de apoio, informações sobre o clima, geolocalização em tempo real e histórico de caminhadas, visando proporcionar mais segurança e comodidade aos usuários durante o percurso. Foi utilizado para desenvolver esse projeto as seguintes tecnologias: HTML/CSS, PHP, JAVASCRIPT, além de algumas bibliotecas e Api's.
