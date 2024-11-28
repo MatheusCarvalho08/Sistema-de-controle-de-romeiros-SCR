@@ -1,0 +1,191 @@
+@import url("https://swapfonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --header-height: 4.5rem;
+    --font-semi: 600;
+    /*===== Cores utilizadas =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    /*===== Fontes =====*/
+    --body-font: 'Poppins', sans-serif;
+    /*===== z index - Ordem de pilha =====*/
+    --z-back: -10;
+    --z-fixed: 100;
+    /*===== Margins =====*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+body {
+    background: rgb(241, 241, 241);
+}
+
+/*===== CSS DO FORM =====*/
+.container {
+    margin-top: 150px;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+}
+
+.container h1{
+    color: hsl(224, 56%, 12%);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--first-color);
+    padding: 1rem;
+    box-shadow: 3px 3px 4px #00000069;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 3px 3px 4px #00000069;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--first-color);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid var(--first-color);
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.continue-button input {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: var(--first-color);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+.continue-button input:hover {
+    background-color: rgb(0, 0, 27);
+}
+
+.continue-button input{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        max-height: 20rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .container h1{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --header-height: 4.5rem;
+    --font-semi: 600;
+    /*===== Cores utilizadas =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    /*===== Fontes =====*/
+    --body-font: 'Poppins', sans-serif;
+    /*===== z index - Ordem de pilha =====*/
+    --z-back: -10;
+    --z-fixed: 100;
+    /*===== Margins =====*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+.container-fluid h1{
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: var(--second-color);
+    margin-top: 115px;
+}
+
+.container-fluid p{
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.container-fluid hr{
+    width: 50%;
+}
+
+  /*map*/
+  #googleMap {
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
+  }
+  
+  /*output box*/
+  #output {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px auto;
+    font-family: var(--body-font);
+    color: white;
+    font-weight: bold;
+    background-color: hsl(224, 56%, 12%);
+    margin-top: 50px;
+  }
+
+/*===== Css form mapa =====*/
+.form-group label{
+    padding: 5px;
+    color: var(--second-color);
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-group input {
+    width: 25%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 15px;
+    border-radius: .5rem;
+    border: 2px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+    transition: border .3s;
+    resize: none;
+}
+
+.btn-calcular button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+    transition: all .3s;
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -13px;
+    border: none;
+}
+
+.btn-calcular button:hover {
+    box-shadow: rgba(17, 17, 26, 0.3) 0px 8px 24px, rgba(17, 17, 26, 0.3) 0px 16px 56px, rgba(17, 17, 26, 0.3) 0px 24px 80px;
+    background-color: var(--second-color);
+}
+
+.footer{
+    margin-top: 100px;
+}
+

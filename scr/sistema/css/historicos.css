@@ -1,0 +1,52 @@
+:root {
+  --header-height: 4.5rem;
+  --font-semi: 600;
+  /*===== Cores utilizadas =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+  /*===== Fontes =====*/
+  --body-font: 'Poppins', sans-serif;
+  /*===== z index - Ordem de pilha =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+  /*===== Margins =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+h1{
+  color: var(--second-color);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .table>:not(caption)>*>*{
+    font-size: 8px;
+  }
+
+  .m-5{
+    margin: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .m-5{
+    margin: 0.1rem !important;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .table>:not(caption)>*>*{
+    font-size: 6.5px;
+  }
+
+  .m-5{
+    margin: 0.1rem !important;
+  }
+}
